@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500;600&family=Lato&family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Gulzar&family=Oxygen:wght@300;400;700&display=swap");
+.login {
+  background-image: url(./img/bglogin.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.list-post {
+  font-family: "Oxygen", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.spinner {
+  background-color: #0000008f;
+  z-index: 2;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 25px 0 0 25px;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+.spinner .path {
+  stroke: rgb(11, 17, 22);
+  stroke-linecap: round;
+  animation: spinner-path 1.5s ease-in-out infinite;
+}
+.info-text {
+  font-family: "Nunito", sans-serif;
+  margin-top: 25px;
+}
+.topbox-item p {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  padding: 0 15px 0 15px;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.box-newstpost {
+  box-shadow: 2px 2px 30px gray;
+}
+.postitem-content {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 80px;
+}
+.box-setting {
+  position: absolute;
+  background: white;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+.setting:hover .box-setting {
+  display: block;
+  opacity: 1;
+  box-shadow: 2px 2px 30px gray;
+  transition: all 0.3s;
+}
+.bannerblog {
+  background: url(./img/banner.jpg);
+  background-position: top -70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.box-setting ul li:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}
+.title-info {
+  font-family: "Ibarra Real Nova", serif;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.top-post {
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.card-title {
+  font-family: "Ibarra Real Nova", serif;
+  color: black;
+}
+
+@media (max-width: 1025px) {
+  .hostpost {
+    padding: 0 20px;
+  }
+}
+@keyframes spin {
+  100% {
+    transform: spin(360deg);
+  }
+}
+@keyframes spinner-path {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}

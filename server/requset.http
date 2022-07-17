@@ -1,0 +1,52 @@
+###
+POST http://localhost:5001/api/localhost:5001/api/auth/login 
+Content-Type: application/json
+{
+    "username":"fsdffs",
+    "password":"test abc"
+}
+###
+POST  http://localhost:5001/api/post
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmNlOWQ5MDkwZTJjMGQzZGM3MDM4YmQiLCJpYXQiOjE2NTc3MDc5MzV9.yY-YZeCpg5zxtOsqNQbyt6wYvjufwBOy5a5wA88nCBk
+
+{
+    "title": "di hoc tieng anh",
+    "content": "sdfsd"
+}
+###
+PUT http://localhost:5001/api/post/62cea55b9ee1779b2e85c872
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmNlOWQ5MDkwZTJjMGQzZGM3MDM4YmQiLCJpYXQiOjE2NTc3MDc5MzV9.yY-YZeCpg5zxtOsqNQbyt6wYvjufwBOy5a5wA88nCBk 
+
+{
+    "title":"Chơi đàn piano5",
+    "content":"Hôm nay tập đàn piano7"
+}
+### 
+POST  http://localhost:5001/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "minh",
+    "password": "1970"
+}
+###
+POST  http://localhost:5001/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "titi",
+    "password": "123"
+}
+
+###
+DELETE http://localhost:5001/api/post/62d157181b95cb317ede36f9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmNlOWQ5MDkwZTJjMGQzZGM3MDM4YmQiLCJpYXQiOjE2NTc3MDc5MzV9.yY-YZeCpg5zxtOsqNQbyt6wYvjufwBOy5a5wA88nCBk 
+
+
+###
+GET http://localhost:5001/api/post
+Content-Type: application/json
+ 
+
