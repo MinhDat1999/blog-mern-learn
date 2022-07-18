@@ -10,7 +10,7 @@
 ![image](https://user-images.githubusercontent.com/102896780/179444132-056c67e3-1f0a-461b-aa50-17ca96b04962.png)
 # Setting
 /*
-  npm init
+  setting : cd client => npm i
   run project: npm run start
 */
 
