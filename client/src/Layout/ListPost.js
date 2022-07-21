@@ -81,7 +81,7 @@ const ListPost = ({ posts }) => {
                     <img
                       src="https://vietrektravel.com/ckeditor/plugins/fileman/Uploads/vietrel-travel/bai-viet/ky-quan-thien-nhien-the-gioi-tai-viet-nam/ky-quan-thien-nhien-vinh-ha-long-hai-phong.jpg"
                       alt=""
-                      className="h-[300px] "
+                      className="h-[300px] w-full "
                     />
                     <div className="absolute text-center topbox-item w-[85%] h-[85%]  bg-[#0000004d]">
                       <h3 className="text-center text-2xl p-3 ">
